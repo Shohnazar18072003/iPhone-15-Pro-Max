@@ -1,0 +1,228 @@
+
+body{
+   font-family: 'Poppins', sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   background-color: darkslategray;
+
+}
+
+/* The device with borders */
+.smartphone {
+   position: relative;
+   width: 340px;
+   height: 580px;
+   margin: auto;
+   border: 16px black solid;
+   border-top-width: 60px;
+   border-bottom-width: 60px;
+   border-radius: 36px;
+ }
+ 
+ /* The horizontal line on the top of the device */
+ .smartphone::before {
+   content: '';
+   display: block;
+   width: 60px;
+   height: 10px;
+   position: absolute;
+   top: -30px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: #333;
+   border-radius: 10px;
+ }
+ 
+ /* The circle on the bottom of the device */
+ .smartphone:after {
+   content: '';
+   display: block;
+   width: 100px;
+   height: 28px;
+   position: absolute;
+   left: 50%;
+   top: -20px;
+   transform: translate(-50%, -50%);
+   background: #333;
+   border-radius: 20px;
+ }
+ 
+ /* The screen (or content) of the device */
+ .smartphone .content {
+   position: absolute;
+   width: 340px;
+   height: 665px;
+   border-radius: 32px;
+   margin-top: -43px;
+   
+}
+.header{
+   background-color:rgb(29, 27, 27) ;
+   /* background-image: url("../iphone14pro.jpg") !important; */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 665px;
+   border-radius: 32px;
+
+ }
+
+ 
+.content__header{
+   display: flex;
+}
+ .content__header-time{
+   font-size: 18px;
+   margin-left: 35px;
+   margin-top: 12px;
+   color: azure;
+ }
+
+ .content__header-right{
+   display: flex;
+   position: absolute;
+   right: 15px;
+   top: 10px;
+   align-items: center;
+   gap: 3px;
+ }
+ .connection{
+   width: 18px;
+   height: 13px;
+ }
+ .persent-battery{
+   font-size: 10px;
+ }
+ .five-g{
+   font-size: 14px;
+   margin: 0;
+   color: #fff
+ }
+
+
+ /* location */
+
+ .location{
+   margin-top: -15px;
+   background: transparent;
+   color: #fff;
+   border: none;
+   display: flex;
+   align-items: center;
+ }
+
+ .edit{
+   margin-top: -10px;
+   padding: 0 10px;
+   color: coral;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .hours{
+   color: #fff;
+   padding: 0 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .two-hour{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .clock__footer{
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-around
+ }
+
+ .clock-btn{
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+ }
+ .clock-btn-img{
+  width: 32px;
+  height: 32px;
+ }
+
+ .clock-active{
+  color: gold !important;
+ }
+
+ .set{
+  margin: 0px 20px;
+  padding: 100px;
+  background: url("../image/timer-bg.png") center no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+ }
+ #minut, #secund{
+  font-size: 32px;
+  background-color: rgb(33, 32, 32);
+  border: none;
+  color: #fff;
+ }
+
+ .taymerStop{
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  background-color: chocolate;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  padding: 20px 10px;
+  font-weight: 700;
+ }
+
+ .taymerReset{
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  background-color: rgb(23, 23, 102);
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid rgb(84, 84, 84) ;
+  padding: 23px 10px;
+  font-weight: 700;
+
+ }
+
+ .taymerStart{
+  position: absolute;
+  top: -80px;
+  left: 42%;
+  border: 1px solid #333 ;
+  padding: 20px 15px;
+  background-color: green;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 700;
+
+ }
+
+ .timer__comment{
+  background-color: rgb(23, 23, 102);
+  margin: 70px 10px;
+  padding: 20px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+ }
